@@ -1,0 +1,71 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PHP Server in workspace",
+			"command": "php",
+			"type": "shell",
+			"args": [
+				"-S",
+				"localhost:8080",
+				"-t",
+				"${workspaceFolder}"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"clear": true
+			},
+		},
+		{
+			"label": "Compile SCSS",
+			"type": "shell",
+			"command": "sass",
+			"args": [
+				"--color",
+				"--error-css",
+				"--charset",
+				"--unicode",
+				"--load-path=./scss",
+				"--load-path=./css",
+				"--style=expanded",
+				"--embed-source-map",
+				"--trace",
+				"./scss:./css"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"windows": {
+				"command": "sass",
+				"args": [
+					"--color",
+					"--error-css",
+					"--charset",
+					"--unicode",
+					"--load-path=.\\scss",
+					"--load-path=.\\css",
+					"--style=expanded",
+					"--embed-source-map",
+					"--trace",
+					".\\scss:.\\css"
+				]
+			},
+			"group": "build",
+			"runOptions": {
+				"runOn": "default"
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"clear": true
+			},
+			"problemMatcher": []
+		}
+	]
+}

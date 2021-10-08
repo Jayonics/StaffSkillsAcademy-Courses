@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Template Run" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="module11" />
+    <module name="Java Certification Level 1" />
+    <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
