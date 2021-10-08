@@ -6,11 +6,11 @@ public class lab4 {
 
     Scanner grab = new Scanner(System.in);
     System.out.println("What's your name?");
-    String name = grab.nextline();
+    String name = grab.nextLine();
     System.out.println("What's your email?");
-    String mail = grab.nextline();
+    String mail = grab.nextLine();
     System.out.println("What's your favorite band?");
-    String band = grab.nextline();
+    String band = grab.nextLine();
 
     String fName = name.replaceAll(" ", "") + ".txt";
 
